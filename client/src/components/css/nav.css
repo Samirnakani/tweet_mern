@@ -1,0 +1,49 @@
+
+label{
+    display: none;
+}
+.overlay{
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:710px ){
+    .navbar{
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        right:-100%;
+        height:100%;
+        width:70%;
+        justify-content: flex-start;
+        background-color: rgb(255, 251, 247);
+        border-radius: 10px;
+        z-index:10;
+        gap:1px;
+        transition: .6s;
+        
+    }
+    .navbar a {
+        width:100%;
+        border:2px black solid;
+        background-color:transparent;
+        height: 60px;
+    }
+    label{
+        display: block;
+    }
+    #check:checked ~ .navbar{
+        right:0;
+        
+    }#check:checked ~ .overlay{
+        display: block;
+        height:100%;
+        width:100%;
+        position: fixed;
+        z-index: 9;
+        
+    }
+    
+   
+}
