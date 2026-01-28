@@ -21,24 +21,24 @@ const Navbar = () => {
         </label>
         <Link
           to="/home"
-          className="bg-sky-600 px-5 min-w-22  rounded-[3px] hover:bg-sky-300 active:scale-95"
+          className="px-5 min-w-22  rounded-[3px] active:scale-95 font-semibold"
         >
           Home
         </Link>
         <Link
           to="/create"
-          className="bg-sky-600 my-1 min-w-22 px-5 rounded-[3px] hover:bg-sky-300 active:scale-95 "
+          className="px-5 min-w-22  rounded-[3px] active:scale-95 font-semibold"
         >
           Create
         </Link>
         <Link
           to="/about"
-          className="bg-sky-600 my-1 px-5 rounded-[3px] hover:bg-sky-300 active:scale-95 "
+          className="px-5 min-w-22  rounded-[3px] active:scale-95 font-semibold "
         >
           about
         </Link>
 
-        <div className="mr-1 h-full  ">
+        <div className=" h-full flex justify-center items-center">
           <Logout />
         </div>
       </div>

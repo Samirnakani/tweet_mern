@@ -15,7 +15,7 @@ const Logout = () => {
 
   return (
    
-      <button onClick={submitHandler} className="h-8 w-22 bg-red-600 px-4 mt-1 mr-2 rounded-2xl hover:bg-red-700 active:scale-95 ">Log out</button>
+      <button onClick={submitHandler} className="h-8 w-22 bg-red-600 mr-5  rounded-2xl hover:bg-red-700 active:scale-95 ">Log out</button>
    
   );
 };

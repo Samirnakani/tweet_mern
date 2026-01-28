@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import { RiDeleteBinLine } from "react-icons/ri";
+import { FaEdit } from "react-icons/fa";
 const API_BASE = "http://localhost:3000";
 
 const TweetCard = ({ tweet, currentUserId, onDelete, onUpdate }) => {
@@ -63,13 +64,13 @@ const TweetCard = ({ tweet, currentUserId, onDelete, onUpdate }) => {
                 onClick={() => setIsEditing(true)}
                 className="px-3 py-1 text-sm rounded-md bg-blue-100 text-blue-700 hover:bg-blue-200 transition"
               >
-                Edit
+                <FaEdit />
               </button>
               <button
                 onClick={deleteTweet}
                 className="px-3 py-1 text-sm rounded-md bg-red-100 text-red-700 hover:bg-red-200 transition"
               >
-                Delete
+                <RiDeleteBinLine />
               </button>
             </div>
           )}
