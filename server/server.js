@@ -21,6 +21,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+const port = process.env.PORT ?? 3000
 app.use(
   cors({
     origin: "http://localhost:5173",
@@ -122,6 +124,6 @@ app.get("/api/me", auth, (req, res) => {
   });
 });
 
-app.listen(process.env.PORT, () => {
-  console.log("Server running on port", process.env.PORT);
+app.listen(port, () => {
+  console.log("Server running on port", port);
 });
